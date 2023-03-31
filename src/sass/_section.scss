@@ -3,7 +3,6 @@
   }
 
 .search-form {
-    position: fixed;
     top: -1px;
     width: 100%;
 
@@ -19,15 +18,16 @@
 
 input {
     width: 450px;
-    height: 30px;
 }
 
-button {
-    width: 150px;
-    height: 30px;
-    background-color: #ccc;  
-}
-input, button {
-    display: inline-block;
+input, .button-search {
     vertical-align: middle;
+    display: inline-block;
+    height: 35px;
+}
+.button-search {
+    width: 35px;
+    background-color: #ccc; 
+    background-image: url(../images/search.svg); 
+    
 }
