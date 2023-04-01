@@ -24,7 +24,7 @@ export const renderCards = (collection) =>{
 }
 export const updateLoadButton = (currentPage) => {
     const btnEl = document.querySelector('.load-more');
-    btn.dataset.page = Number(currentPage) + 1;
+    btnEl.dataset.page = Number(currentPage) + 1;
 };
 
 export const clearGallery = () => {
