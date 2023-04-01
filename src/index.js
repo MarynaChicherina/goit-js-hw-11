@@ -25,14 +25,14 @@ const fetchCards = (search, page) => getPictures(search, page)
 }).catch(e => console.log(e));
 
 function onSearchBtnSubmit(e) {
-    e.preventDefault;
+    e.preventDefault();
     const search = e.currentTarget.elements.searchQuery.value.trim();
-    if (search !== searchState) {
+    if(search !== searchState) {
         searchState = search;
         currentPage = 1;
         clearGallery();
         fetchCards(search, 1);
-    } else if (collection.total === 0) {
+    } else if(collection.total === 0) {
         btnEl.classList.add('is-hidden');
         Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
     } else {
