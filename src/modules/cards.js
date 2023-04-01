@@ -1,7 +1,5 @@
 
 export const renderCards = (collection) =>{
-    const picturesContainer = document.querySelector('.gallery');
-    picturesContainer.innerHTML = '';
     return collection.hits.map(({webformatURL, largeImageURL, tags, likes, comments, downloads, views}) => {
         return 
         `<div class="photo-card">
@@ -24,3 +22,12 @@ export const renderCards = (collection) =>{
          </div>`
     }).join('')
 }
+export const updateLoadButton = (currentPage) => {
+    const btnEl = document.querySelector('.load-more');
+    btn.dataset.page = Number(currentPage) + 1;
+};
+
+export const clearGallery = () => {
+    const galleryEl = document.querySelector('.gallery');
+    galleryEl.innerHTML = '';
+};
