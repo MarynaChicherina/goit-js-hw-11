@@ -1,4 +1,3 @@
-
 export const renderCards = (collection) =>{
     return collection.hits.map(({webformatURL, largeImageURL, tags, likes, comments, downloads, views}) => {
         return 
