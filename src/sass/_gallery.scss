@@ -1,8 +1,25 @@
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 30px;
+  gap: 30px;
   }
   
-  .photo-card__link{
+  .photo-card__link {
     text-decoration: none;
+    
+  }
+  .info {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 5px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .info_li {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
   }
