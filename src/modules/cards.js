@@ -22,12 +22,13 @@ export const renderCards = (collection) =>{
          </div>`
     }).join('')
 }
+
 export const updateLoadButton = (currentPage) => {
     const btnEl = document.querySelector('.load-more');
     btnEl.dataset.page = Number(currentPage) + 1;
-};
+}
 
 export const clearGallery = () => {
     const galleryEl = document.querySelector('.gallery');
     galleryEl.innerHTML = '';
-};
+}

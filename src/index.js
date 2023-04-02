@@ -32,7 +32,7 @@ function onSearchBtnSubmit(e) {
         currentPage = 1;
         clearGallery();
         fetchCards(search, 1);
-    } else if(collection.total === 0) {
+    } else if (collection.total === 0) {
         btnEl.classList.add('is-hidden');
         Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
     } else {
