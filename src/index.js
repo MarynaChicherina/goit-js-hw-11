@@ -5,7 +5,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { renderCards } from './modules/render';
 
 
-formEl = document.querySelector('#search-form'),
+formEl = document.querySelector('.search-form'),
 galleryEl = document.querySelector('.gallery'),
 btnEl = document.querySelector('.load-more')
 
