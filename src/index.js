@@ -5,8 +5,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { renderCards } from './modules/render';
 
 
-const formEl = document.querySelector('#search-form'),
-const galleryEl = document.querySelector('.gallery'),
+const formEl = document.querySelector('#search-form');
+const galleryEl = document.querySelector('.gallery');
 const btnEl = document.querySelector('.load-more')
 
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
