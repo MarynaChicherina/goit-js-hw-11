@@ -24,16 +24,7 @@ function onSearchBtnSubmit(e){
         e.preventDefault();
         clearGallery();
         searchValue = e.currentTarget.elements.searchQuery.value.trim();
-        const params = new URLSearchParams({
-            q: searchValue,
-            key: API_KEY,
-            image_type: "photo",
-            orientation:  "horizontal",
-            safesearch: "true",
-            per_page: 40,
-            page: currentPage
-            });
-        const url = `${BASE_URL}?${params.toString()}`;
+        const url = `${BASE_URL}?key=${API_KEY}&q=${searchValue}&type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${currentPage}`;
         
 if (searchValue === '') {
     btnEl.classList.add('is-hidden');
@@ -67,16 +58,7 @@ async function getPictures(url) {
 }
 
 function onLoadMoreBtnClick() {
-  const params = new URLSearchParams({
-    q: searchValue,
-    key: API_KEY,
-    image_type: "photo",
-    orientation:  "horizontal",
-    safesearch: "true",
-    per_page: 40,
-    page: currentPage
-    });
-const url = `${BASE_URL}?${params.toString()}`;
+  const url = `${BASE_URL}?key=${API_KEY}&q=${searchValue}&type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${currentPage}`;
     getPictures(url);
   }
 
