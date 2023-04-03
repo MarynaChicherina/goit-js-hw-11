@@ -5,9 +5,9 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { renderCards } from './modules/render';
 
 
-formEl = document.querySelector('.search-form'),
-galleryEl = document.querySelector('.gallery'),
-btnEl = document.querySelector('.load-more')
+const formEl = document.querySelector('#search-form'),
+const galleryEl = document.querySelector('.gallery'),
+const btnEl = document.querySelector('.load-more')
 
 const lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
 const BASE_URL = 'https://pixabay.com/api/';
