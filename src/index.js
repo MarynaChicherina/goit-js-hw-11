@@ -67,6 +67,16 @@ async function getPictures(url) {
 }
 
 function onLoadMoreBtnClick() {
+  const params = new URLSearchParams({
+    q: searchValue,
+    key: API_KEY,
+    image_type: "photo",
+    orientation:  "horizontal",
+    safesearch: "true",
+    per_page: 40,
+    page: currentPage
+    });
+const url = `${BASE_URL}?${params.toString()}`;
     getPictures(url);
   }
 
